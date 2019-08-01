@@ -1,4 +1,17 @@
 {
+  "name": "high-performance-timer",
+  "version": "1.0.0",
+  "description": "高性能的定时器",
+  "author": "cuixiaorui",
+  "license": "MIT",
+  "homepage": "https://github.com/cuixiaorui/high-performance-timer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cuixiaorui/high-performance-timer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cuixiaorui/high-performance-timer/issues"
+  },
   "scripts": {
     "test": "jest"
   },
