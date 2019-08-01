@@ -1,9 +1,9 @@
 const Heap = require("../lib/heap");
-
+const { comparisonHandler } = require("../lib/handler");
 describe("Heap", function() {
   describe("insert()", function() {
     it("insert one data", () => {
-      let heap = new Heap();
+      let heap = new Heap(comparisonHandler);
       heap.insert({
         date: new Date()
       });
@@ -12,7 +12,7 @@ describe("Heap", function() {
       expect(heap.count).toBe(2);
     });
     it("insert two data", () => {
-      let heap = new Heap();
+      let heap = new Heap(comparisonHandler);
       heap.insert({
         date: new Date()
       });
@@ -28,7 +28,7 @@ describe("Heap", function() {
     });
 
     it("insert three data", () => {
-      let heap = new Heap();
+      let heap = new Heap(comparisonHandler);
 
       //1567152912000
       heap.insert({
@@ -49,12 +49,12 @@ describe("Heap", function() {
 
   describe("removeMin()", () => {
     it("if empty list return null", () => {
-      let heap = new Heap();
+      let heap = new Heap(comparisonHandler);
       expect(heap.removeMin()).toBeNull();
     });
 
     it("if one length list retrun first node", () => {
-      let heap = new Heap();
+      let heap = new Heap(comparisonHandler);
       //1567152912000
       heap.insert({
         date: new Date("2019-08-30 16:15:12")
@@ -66,7 +66,7 @@ describe("Heap", function() {
     });
 
     it("return min data in the list", () => {
-      let heap = new Heap();
+      let heap = new Heap(comparisonHandler);
 
       //1567152912000
       heap.insert({
