@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "高性能的定时器",
   "author": "cuixiaorui",
+  "main": "lib/index.js",
   "license": "MIT",
   "homepage": "https://github.com/cuixiaorui/high-performance-timer",
   "repository": {
@@ -17,5 +18,9 @@
   },
   "devDependencies": {
     "jest": "^24.8.0"
-  }
+  },
+  "keywords": [
+    "timer",
+    "performance"
+  ]
 }
