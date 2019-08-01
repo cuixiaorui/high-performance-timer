@@ -1,6 +1,6 @@
 {
   "name": "high-performance-timer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "高性能的定时器",
   "author": "cuixiaorui",
   "main": "lib/index.js",
